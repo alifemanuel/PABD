@@ -50,6 +50,7 @@ public class DesafioUI extends javax.swing.JFrame {
         jLabel1.setText("Color Mixer");
 
         jSlider1.setMajorTickSpacing(50);
+        jSlider1.setMaximum(255);
         jSlider1.setMinorTickSpacing(5);
         jSlider1.setPaintLabels(true);
         jSlider1.setPaintTicks(true);
@@ -60,6 +61,7 @@ public class DesafioUI extends javax.swing.JFrame {
         });
 
         jSlider2.setMajorTickSpacing(50);
+        jSlider2.setMaximum(255);
         jSlider2.setMinorTickSpacing(5);
         jSlider2.setPaintLabels(true);
         jSlider2.setPaintTicks(true);
@@ -70,6 +72,7 @@ public class DesafioUI extends javax.swing.JFrame {
         });
 
         jSlider3.setMajorTickSpacing(50);
+        jSlider3.setMaximum(255);
         jSlider3.setMinorTickSpacing(5);
         jSlider3.setPaintLabels(true);
         jSlider3.setPaintTicks(true);
