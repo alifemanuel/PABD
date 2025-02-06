@@ -4,6 +4,8 @@
  */
 package ui;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 20221074010001
@@ -15,6 +17,7 @@ public class TrianguloUI extends javax.swing.JFrame {
      */
     public TrianguloUI() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -174,6 +177,15 @@ public class TrianguloUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void calcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcActionPerformed
+        
+        
+        if (jTextField1.getText().equals("") || jTextField1.getText().equals("") || jTextField1.getText().equals("")) {
+        JOptionPane.showMessageDialog(null, "Preencha todos os lados!", "ERRO", JOptionPane.ERROR_MESSAGE);
+        
+        } else{
+            
+        
+        
         double a = Double.parseDouble(jTextField1.getText());
         double b = Double.parseDouble(jTextField2.getText());
         double c = Double.parseDouble(jTextField3.getText());
@@ -204,6 +216,7 @@ public class TrianguloUI extends javax.swing.JFrame {
         }else if((a == b && b != c) || (b == c && c != a)) {//Verificar se o triângulo é isósceles.
             tipoLabel.setText("Tipo: Isósceles");
             areaLabel.setText(String.format("Área: %.4f", area));
+        }
         }
 
         
